@@ -1,0 +1,35 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    background-image: url('https://www.transparenttextures.com/patterns/crumpled-paper.png');
+    background-color: #f9ecb9; /* Light cream */
+    color: #a4805d; /* Coffee brown */
+    overflow-x: hidden;
+}
+.nav-button {
+    transition: all 0.3s ease;
+    border: 2px solid #a4805d; /* Coffee brown */
+    border-radius: 10px;
+    background: #f3cb7d; /* Golden cream */
+    transform: rotate(var(--rotate));
+    box-shadow: 3px 3px 0 #a4805d; /* Coffee brown shadow */
+}
+.nav-button:hover {
+    transform: rotate(var(--rotate)) scale(1.1);
+    background: #a4ddd8; /* Soft teal */
+    color: #a4805d; /* Coffee brown */
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+.drawing-card {
+    border: 2px dashed #a4805d; /* Coffee brown */
+    background: #f9ecb9; /* Light cream */
+    transform: rotate(var(--rotate));
+    transition: transform 0.3s ease;
+}
+.drawing-card:hover {
+    transform: rotate(var(--rotate)) translateY(-5px);
+}

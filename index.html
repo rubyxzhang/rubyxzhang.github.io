@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Doodly Drawings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen relative">
+    <!-- Doodle decorations will be added via JavaScript -->
+    <div id="doodle-container"></div>
+
+    <header class="w-full py-10 text-center">
+        <h1 class="text-5xl font-bold"; color: #a4805d;>My Drawings!</h1>
+        <p class="text-2xl mt-2">Ruby Zhang</p>
+    </header>
+
+    <nav class="w-full max-w-4xl mx-auto mt-6 flex flex-wrap justify-center gap-4 px-4">
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: -5deg;" onclick="showSection('stickers')">Stickers!</button>
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: 4deg;" onclick="showSection('watermarks')">Watermarks!</button>
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: -3deg;" onclick="showSection('box-seals')">Box Seals!</button>
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: 6deg;" onclick="showSection('doodles')">Bear Bao!</button>
+    </nav>
+
+    <main class="w-full max-w-5xl mx-auto mt-8 px-4">
+        <section id="stickers" class="section active">
+            <h2 class="text-4xl font-bold text-center" style="transform: rotate(2deg); color: #a4ddd8;">Stickers!!</h2>
+            <p class="text-xl text-center mt-2" style="transform: rotate(-1deg);">Stick 'em anywhere!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker1.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Sheep Pop Symphony</p>
+                </div>
+                 <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker2.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Grape Spell Academy</p>
+                </div>
+                 <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker3.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Orange Tart Café</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker4.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Koala Bean Dream</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker5.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Piggy Shortcake Picnic</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker6.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Holly Jolly Piggy</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker7.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Cherry Pup Café</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker8.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Bunny Book Club</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/sticker8.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Whiskers of the Waterfall</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="watermarks" class="section">
+            <h2 class="text-4xl font-bold text-center" style="transform: rotate(-3deg); color: #f3cb7d;">Watermarks!!</h2>
+            <p class="text-xl text-center mt-2" style="transform: rotate(2deg);">Keep your art safe!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: 3deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/watermark1.jpeg" alt="Watermark 1" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/watermark2.jpeg" alt="Watermark 2" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/watermark3.jpeg" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/watermark4.jpeg" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/watermark5.jpeg" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/watermark6.jpeg" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="box-seals" class="section">
+            <h2 class="text-4xl font-bold text-center" style="transform: rotate(1deg); color: #a4805d;">Box Seals!!</h2>
+            <p class="text-xl text-center mt-2" style="transform: rotate(-2deg);">Seal your stuff!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: -6deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/seal1.jpeg" alt="Box Seal 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 3deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/seal3.jpeg" alt="Box Seal 2">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/seal4.jpeg" alt="Box Seal 3">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/seal5.jpeg" alt="Box Seal 4">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/seal6.jpeg" alt="Box Seal 5" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/seal7.jpeg" alt="Box Seal 6">
+                </div>
+            </div>
+        </section>
+
+        <section id="doodles" class="section">
+            <h2 class="text-2xl text-center" style="color: #a4ddd8">Bear Bao is a soft, snuggly bear I created to spread cozy vibes and tasty adventures!</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: 5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/doodle1.jpg" alt="Doodle 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/doodle2.jpg" alt="Doodle 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/doodle3.jpg" alt="Doodle 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/doodle4.jpg" alt="Doodle 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/doodle5.jpg" alt="Doodle 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 5deg;">
+                    <img src="/Users/ruthzhang/Desktop/66网站/doodle6.jpg" alt="Doodle 1">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full py-4 mt-8 text-center">
+        <p class="text-xl" style="transform: rotate(2deg); color: #a4805d;">Scribbled with LOVE!</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
