@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RubyZhang's Sticky Things</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen relative">
+    <!-- Doodle decorations will be added via JavaScript -->
+    <div id="doodle-container"></div>
+
+    <header class="w-full py-10 text-center">
+        <h1 class="text-5xl font-bold"; color: #a4805d;>My Designs</h1>
+        <p class="text-2xl mt-2">Ruby Zhang</p>
+    </header>
+
+    <nav class="w-full max-w-4xl mx-auto mt-6 flex flex-wrap justify-center gap-4 px-4">
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: -5deg;" onclick="showSection('stickers')">Stickers</button>
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: 4deg;" onclick="showSection('watermarks')">Watermarks</button>
+        <button class="nav-button px-6 py-3 text-xl" style="--rotate: -3deg;" onclick="showSection('box-seals')">Box Seals</button>
+    </nav>
+
+    <main class="w-full max-w-5xl mx-auto mt-8 px-4">
+        <section id="stickers" class="section active">
+            <h2 class="text-4xl font-bold text-center" style="transform: rotate(2deg); color: #a4ddd8;">Stickers</h2>
+            <p class="text-xl text-center mt-2" style="transform: rotate(-1deg);">Stick them anywhere!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker1.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Bunny School</p>
+                </div>
+                 <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker2.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Cherry Pup Cafe</p>
+                </div>
+                 <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker3.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Orange Café</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker4.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Koala Mint Chip</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker5.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Piggy Melon</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker6.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Grape Spell Academy</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker7.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Summer Vibes</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker8.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Piggy Chef</p>
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -4deg;">
+                    <img src="sticker9.png" alt="Sticker 1">
+                    <p class="mt-2 text-lg text-center">Sheep's Jazz Band</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="watermarks" class="section">
+            <h2 class="text-4xl font-bold text-center" style="transform: rotate(-3deg); color: #f3cb7d;">Watermarks!!</h2>
+            <p class="text-xl text-center mt-2" style="transform: rotate(2deg);">Keep your art safe!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: 3deg;">
+                    <img src="watermark1.png" alt="Watermark 1" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -5deg;">
+                    <img src="watermark2.png" alt="Watermark 2" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="watermark3.png" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="watermark4.png" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="watermark5.png" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 4deg;">
+                    <img src="watermark6.png" alt="Watermark 3" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="box-seals" class="section">
+            <h2 class="text-4xl font-bold text-center" style="transform: rotate(1deg); color: #a4805d;">Box Seals</h2>
+            <p class="text-xl text-center mt-2" style="transform: rotate(-2deg);">Seal your package!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+                <div class="drawing-card p-4" style="--rotate: -6deg;">
+                    <img src="boxseal1.png" alt="Box Seal 1">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: 3deg;">
+                    <img src="boxseal2.png" alt="Box Seal 2">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="boxseal3.png" alt="Box Seal 3">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="boxseal4.png" alt="Box Seal 4">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="boxseal5.png" alt="Box Seal 5">
+                </div>
+                <div class="drawing-card p-4" style="--rotate: -1deg;">
+                    <img src="boxseal6.png" alt="Box Seal 6">
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+	
+   
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
